@@ -101,7 +101,7 @@ The API function `const inotify_event* Inotify::read(int timeout =(-1), int read
 
 ## To compile,
 
-This library is only a single file `inotify.hpp`. We just need to #include it and compile it. (`syslog.hpp` is optional, and will provide a function object wrapping `syslog()` system call.)
+This library is only a single file `inotify.hpp`. (I like template programming so much, it even saves me from having to write class declaration and its member defintions in separate files. ^^) We just need to #include it and compile it. (`syslog.hpp` is optional, and will provide a function object wrapping `syslog()` system call.)
 
 ```
 $ g++ -O2 test.cpp -lstdc++fs
