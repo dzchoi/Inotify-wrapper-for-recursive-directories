@@ -60,7 +60,7 @@ For example, suppose a directory `a` that contains a file `A.txt` is copied into
 
 This problem is overcome with this library. If a directory tree is copied into a (recursively-) watched directory, we traverse the whole tree and we prepare all the files and subdirectories in it to be reported as an IN_CREATE event ourselves, not knowing whether or not those may get notified later and reported by the inotify system. So, in this case, we may get duplicated reports from our API `Inotify::read()` for some of them. Still better, however, than missing.
 
-### Can handle Utf-8 encoded (such as Hangul) filenames well, thanks to C++ `std::string`.
+### Can handle UTF-8 encoded (such as Hangul) filenames well, thanks to C++ `std::string`.
 
 ### Can throw exceptions.
 
