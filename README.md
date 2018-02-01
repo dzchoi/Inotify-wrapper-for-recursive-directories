@@ -86,7 +86,7 @@ inline void log(const char* format...)
 
 Then, we can use this `log()` function in defining an instance as:
 
-`Inotify<void (*)(const char*...> inotify { log };`
+`Inotify<void (*)(const char*...)> inotify { log };`
 
 or, if under C++17, simply as:
 
