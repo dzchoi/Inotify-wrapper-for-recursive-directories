@@ -30,7 +30,7 @@ int main() {
     }
 }
 ```
-This is a copy of `test.c` in this repository. Here, we add two watches for "/home/user1" and "/home/user2/".
+This is a copy of `test.c` in this repository. Here, we add two watches on "/home/user1" and "/home/user2/".
 
 "/home/user1", as not ending with the trailing `'/'`, has a recursive watch. It and all its files and subdirectories in any level will be monitored. However, "/home/user2" has a non-recursive watch and will be monitored for only its immediate files and subdirectories.
 
