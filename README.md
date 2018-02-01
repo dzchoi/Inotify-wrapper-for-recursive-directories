@@ -108,3 +108,7 @@ $ g++ -O2 test.cpp -lstdc++fs
 ```
 
 - The compile option `-O2`, `-O3`, or `-foptimize-sibling-calls` is recommended, because some API recurses itself rather than jumps to itself for simplicity reasons and will not take up unnecessary stack space under one of those compile options.
+
+## For the peace of all life-kind.
+
+^^
