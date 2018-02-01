@@ -64,7 +64,7 @@ This problem is overcome with this library. If a directory tree is copied into a
 
 ### Can throw exceptions.
 
-All run-time errors including system call errors are logged via user-provided logging function, and thrown as `std::system_error` exceptions. (The helper function `Inotify::path()` throws an `std::out_of_range` exception if the watch desciptor given as an argument does not exist.)
+All run-time errors including system call errors are logged via user-provided logging function, and thrown as `std::system_error` exceptions. (The helper function `Inotify::path()` throws an `std::out_of_range` exception if the watch descriptor given as an argument does not exist.)
 
 ### Can accept user-provided logging functions.
 
