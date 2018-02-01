@@ -96,7 +96,7 @@ or, if under C++17, simply as:
 
 The API function `const inotify_event* Inotify::read(int timeout =(-1), int read_delay =0)` takes two arguments.
 
-- `timeout` (in milliseconds): time to wait for an event, or (-1) to wait indefinitely. If timed out with no events, `nullptr` would return.
+- `timeout` (in milliseconds): time to wait for an event, or -1 to wait indefinitely. If timed out with no events, `nullptr` would return.
 - `read_delay` (in milliseconds, \[0..1000\]): time to wait after the first event arrives before reading the kernel buffer. This allows further events to accumulate before reading, which allows the kernel to consolidate like events and can enhance performance when there are many similar events.
 
 ## To compile,
