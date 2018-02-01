@@ -46,9 +46,9 @@ A watch on a directory name that does not end with `'/'` is regarded as a recurs
 
 ### Can handle moving watches dynamically and efficiently.
 
-Watches can be moved using `rename` or `mv`. We have a basic principal: when a watched directory moves (or renames) the associated watch gets detached from the directory and is removed, and if the (non-watched) directory happens to moved in another watch and only if that watch is recursive the directory will have a watch attached to it.
+Watches can be moved using `rename` or `mv`. We have a basic principle: when a watched directory moves (or renames) the associated watch gets detached from the directory and is removed, and if the (non-watched) directory happens to moved in another watch and only if that watch is recursive the directory will have a watch attached to it.
 
-It seems like inefficient and seems include the overhead of deleting and then recreating watches. Internally, however, watches are actually moved (or renamed) with a single operation. The principal is just for easy understanding.
+It seems like inefficient and seems include the overhead of deleting and then recreating watches. Internally, however, watches are actually moved (or renamed) with a single operation. The principle is just for easy understanding.
 
 Note that our focus is different from that of the legacy [`inotifywait(1)`](https://linux.die.net/man/1/inotifywait), which is also based on `INOTIFY(7)` but focuses on the watches rather than their associated directories. With `inotifywait`, if a watched directory is moved the watch is always retained but only changes its associated directory. On the other hand, we are focusing on the directory itself, the pathname of the directory to be exact, and we think its watch is associated with the pathname of the directory. So, if the directory is renamed or moved, it will lose its associated watch.
 
