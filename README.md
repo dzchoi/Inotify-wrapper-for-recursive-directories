@@ -108,5 +108,6 @@ $ g++ -O2 test.cpp -lstdc++fs
 ```
 
 - The compile option `-O2`, `-O3`, or `-foptimize-sibling-calls` is recommended, because some API recurses itself rather than jumps to itself for simplicity reasons and will not take up unnecessary stack space under one of those compile options.
+- The link option `-lstdc++fs` is for the experimental `std::experimental::filesystem`, which this library depends on heavily. But, we will be able to skip this option since `gcc v8.0`, as will be implemented under the C++17 standard.
 
 ## For the peace of all life-kind ^^.
