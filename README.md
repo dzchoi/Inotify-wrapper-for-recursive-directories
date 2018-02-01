@@ -38,7 +38,7 @@ This is a copy of `test.c` in this repository. Here, we add two watches on "/hom
 
 We can set up watches on existing directories (but not files) and we must have read-permission for them. Otherwise, the watches will be ignored but will be logged using the given logging function.
 
-Thus, an empty-string path, a non-existing path, a non-directory path, or a path without its read-permission will be simply ignored.
+Thus, watches on an empty-string path, a non-existing path, a non-directory path, or a path without its read-permission will be simply ignored.
 
 ### Can handle recursive directory watches automatically and implicitly.
 
