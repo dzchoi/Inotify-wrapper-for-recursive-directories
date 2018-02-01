@@ -111,6 +111,13 @@ $ g++ -O2 test.cpp -lstdc++fs
 - The link option `-lstdc++fs` is for the experimental `std::experimental::filesystem`, which this library depends on heavily. But, we will be able to skip this link option since `gcc v8.0`, as will be implemented under the C++17 standard.
 
 ## For the peace of all life-kind ^^,
-Thanks.
+
+I thank these references:
+
+http://inotify-simple.readthedocs.io/en/latest/  
+https://lwn.net/Articles/605128/  
+https://www.ibm.com/developerworks/library/l-inotify/index.html  
+https://jdennis.fedorapeople.org/lwatch/html/InotifyOverview.html  
+https://github.com/rvoicilas/inotify-tools  
 
 -- Dongzin Choi (https://www.linkedin.com/in/dzchoi/)
