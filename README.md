@@ -107,4 +107,4 @@ This library is only a single file `inotify.hpp`. (I like template programming s
 $ g++ -O2 test.cpp -lstdc++fs
 ```
 
-- The compile option `-O2`, `-O3`, or `-foptimize-sibling-calls` is recommended, because some API recurses itself rather than jumps to itself for simplicity reasons and will not take up unnecessry stack space under one of those compile options.
+- The compile option `-O2`, `-O3`, or `-foptimize-sibling-calls` is recommended, because some API recurses itself rather than jumps to itself for simplicity reasons and will not take up unnecessary stack space under one of those compile options.
